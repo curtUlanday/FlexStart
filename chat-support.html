@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>STAT</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+
+
+  <style>
+    #hubspot-conversations-inline-iframe {
+      width: 100%;
+      height: 250px;
+      border:none;
+    }
+    
+  </style>
+
+  <!-- =======================================================
+  * Template Name: FlexStart - v1.9.0
+  * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  
+
+  <main id="main">
+
+    <!-- ======= Blog Single Section ======= -->
+    <section id="blog" class="blog">
+      <div id="hubspot-conversations-inline-parent">
+        <iframe></iframe>
+      </div>        
+      
+    </section><!-- End Blog Single Section -->
+
+  </main><!-- End #main -->
+
+  <!-- Start of HubSpot Embed Code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/8580913.js"></script>
+  <!-- End of HubSpot Embed Code -->
+  <script type="text/javascript">
+    function onConversationsAPIReady() {
+      console.log(`HubSpot Conversations API: ${window.HubSpotConversations}`);
+    }
+    /*
+      configure window.hsConversationsSettings if needed.
+    */
+    window.hsConversationsSettings = {
+      loadImmediately: false,
+      inlineEmbedSelector: '#hubspot-conversations-inline-parent',
+      enableWidgetCookieBanner: false,
+      disableAttachment: false
+    };
+    /*
+     If external API methods are already available, use them.
+    */
+    // if (window.HubSpotConversations) {
+    //   onConversationsAPIReady();
+    // } else {
+      
+    //   window.hsConversationsOnReady = [onConversationsAPIReady];
+    //   window.HubSpotConversations.widget.reload();
+    // }
+
+    window.hsConversationsOnReady = [
+  () => {
+    window.HubSpotConversations.widget.load({widgetOpen: true});
+  },
+];
+
+    
+  </script>
+</body>
+
+</html>
