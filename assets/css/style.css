@@ -166,7 +166,7 @@ section {
 }
 .header .logo img {
   max-height: 40px;
-  margin-right: 6px;
+  margin-right: -5px;
 }
 .header .logo span {
   font-size: 30px;
@@ -1954,7 +1954,7 @@ section {
 }
 .footer .footer-top .footer-info .logo img {
   max-height: 40px;
-  margin-right: 6px;
+  margin-right: -5px;
 }
 .footer .footer-top .footer-info .logo span {
   font-size: 30px;
