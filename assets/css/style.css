@@ -166,6 +166,7 @@ section {
 }
 .header .logo img {
   max-height: 40px;
+  max-width: 40px;
   margin-right: -5px;
 }
 .header .logo span {
@@ -667,8 +668,6 @@ section {
   img{
     width: 50% !important;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 .features .feature-icons .content .icon-box {
@@ -1985,6 +1984,7 @@ section {
 }
 .footer .footer-top .footer-info .logo img {
   max-height: 40px;
+  max-width: 40px;
   margin-right: -5px;
 }
 .footer .footer-top .footer-info .logo span {
